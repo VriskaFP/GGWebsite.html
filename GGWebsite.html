@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Global Gathering</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="GGcss.css">
+<link rel="icon" href="imgs/g-g-transparent.png">
+</head>
+<!-- Global Gathering Header -->
+<body style="background-color:#820202">
+<div class="header">
+<img class="image" src="imgs/g-g-transparent.png">
+<div class="name">
+<break>
+<break>
+<break>
+<pre class="name">
+################################################################################################################################
+##██████╗#██╗######██████╗#██████╗##█████╗#██╗##########██████╗##█████╗#████████╗██╗##██╗███████╗██████╗#██╗███╗###██╗#██████╗##
+#██╔════╝#██║#####██╔═══██╗██╔══██╗██╔══██╗██║#########██╔════╝#██╔══██╗╚══██╔══╝██║##██║██╔════╝██╔══██╗██║████╗##██║██╔════╝##
+#██║##███╗██║#####██║###██║██████╔╝███████║██║#########██║##███╗███████║###██║###███████║█████╗##██████╔╝██║██╔██╗#██║██║##███╗#
+#██║###██║██║#####██║###██║██╔══██╗██╔══██║██║#########██║###██║██╔══██║###██║###██╔══██║██╔══╝##██╔══██╗██║██║╚██╗██║██║###██║#
+#╚██████╔╝███████╗╚██████╔╝██████╔╝██║##██║███████╗####╚██████╔╝██║##██║###██║###██║##██║███████╗██║##██║██║██║#╚████║╚██████╔╝#
+##╚═════╝#╚══════╝#╚═════╝#╚═════╝#╚═╝##╚═╝╚══════╝#####╚═════╝#╚═╝##╚═╝###╚═╝###╚═╝##╚═╝╚══════╝╚═╝##╚═╝╚═╝╚═╝##╚═══╝#╚═════╝##
+################################################################################################################################
+</pre>
+</div>
+</div>
+<div class="menu">
+	<div class="menuButton">
+		<a href="#">Homepage</a>
+	</div>
+	<div class="menuButton">
+		<a href="#">Merch</a>
+	</div>
+	<div class="menuButton">
+		<a href="#">Tickets</a>
+	</div>
+	<div class="menuButton">
+		<a href="#">Line-up</a>
+	</div>
+	<div class="menuButton">
+		<a href="#">Contact Us</a>
+	</div>
+</div>
+<div class="container">
+<br>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="imgs/dolgellau.jpg" style="width:100%">
+		  <div class="text">Dolgellau's beautiful scenary</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="imgs/dolgellau_1.jpg" style="width:100%">
+		  <div class="text">Dolgellau's town square</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="imgs/dolgellau_2.jpg" style="width:100%">
+		  <div class="text">With a wide range of choice for hotels</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<br>
+<div class="twitterContainer"><a class="twitter-timeline" data-height="600px" href="https://twitter.com/GlobalGatherin3?ref_src=twsrc%5Etfw">Tweets by GlobalGatherin3</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+</div>
+
+
+
+<div class="footerContainer">
+<a href="https://twitter.com/GlobalGatherin3?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @GlobalGatherin3</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<!--Script for slideshow -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!--Script end-->
+</body>
+</html>
